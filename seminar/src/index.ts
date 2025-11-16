@@ -2,6 +2,8 @@ import express from "express";
 import cors, { CorsOptions } from "cors";
 import path from "path";
 
+import { requestLogger } from "./middlewares/logger";
+
 import statusRouter from "./routes/status";
 import feedRouter from "./routes/feed";
 import accountRouter from "./routes/account";
@@ -24,6 +26,8 @@ const corsOptions = {
 } satisfies CorsOptions;
 
 app.use(cors(corsOptions));
+
+app.use(requestLogger);
 
 app.use("/status", statusRouter);
 app.use("/feed", feedRouter);

@@ -1,0 +1,62 @@
+.cat-image-page {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.upload-section,
+.edit-section {
+  margin: 16px 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image-wrapper {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-image {
+  max-width: 800px;
+  max-height: 800px;
+  object-fit: contain;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel-arrow.left {
+  left: 16px;
+}
+
+.carousel-arrow.right {
+  right: 16px;
+}
+
+.carousel-counter {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
